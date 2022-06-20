@@ -1,13 +1,13 @@
-package integers_test
+package ch2_test
 
 import (
 	"fmt"
-	"learn-go-with-tests/integers"
+	"learn-go-with-tests/ch2"
 	"testing"
 )
 
 func TestAdder(t *testing.T) {
-	sum := integers.Add(2, 2)
+	sum := ch2.Add(2, 2)
 	expected := 4
 
 	if sum != expected {
@@ -16,7 +16,7 @@ func TestAdder(t *testing.T) {
 }
 
 func ExampleAdd() {
-	sum := integers.Add(1, 5)
+	sum := ch2.Add(1, 5)
 	fmt.Println(sum)
 	// Output: 6
 }

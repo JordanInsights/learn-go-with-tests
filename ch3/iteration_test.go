@@ -1,13 +1,13 @@
-package iteration_test
+package ch3_test
 
 import (
 	"fmt"
-	"learn-go-with-tests/iteration"
+	"learn-go-with-tests/ch3"
 	"testing"
 )
 
 func TestRepeat(t *testing.T) {
-	repeated := iteration.Repeat("a", 3)
+	repeated := ch3.Repeat("a", 3)
 	expected := "aaa"
 
 	if repeated != expected {
@@ -17,12 +17,12 @@ func TestRepeat(t *testing.T) {
 
 func BenchmarkRepeat(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		iteration.Repeat("a", 3)
+		ch3.Repeat("a", 3)
 	}
 }
 
 func ExampleRepeat() {
-	s := iteration.Repeat("a", 5)
+	s := ch3.Repeat("a", 5)
 	fmt.Println(s)
 	// Output: aaaaa
 }

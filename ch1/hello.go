@@ -1,4 +1,4 @@
-package basics
+package ch1
 
 const spanish = "Spanish"
 const french = "French"
