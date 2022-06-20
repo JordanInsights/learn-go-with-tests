@@ -2,6 +2,7 @@ package arrays_and_slices_test
 
 import (
 	"learn-go-with-tests/arrays_and_slices"
+	"reflect"
 	"testing"
 )
 
@@ -21,7 +22,7 @@ func TestSumAl(t *testing.T) {
 	t.Run("2 slices", func(t *testing.T) {
 		got := arrays_and_slices.SumAll([]int{1, 2}, []int{3, 4})
 		want := []int{3, 7}
-		if got != want {
+		if !reflect.DeepEqual(got, want) {
 			t.Errorf("got %v want %v", got, want)
 		}
 	})
