@@ -4,3 +4,4 @@
 - Chapter 3: Iteration
 - Chapter 4: Arrays and Slices
 - Chapter 5: Structs, Methods, and Interfaces
+- Chapter 6: Pointers and Errors
