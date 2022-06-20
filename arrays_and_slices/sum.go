@@ -10,5 +10,10 @@ func Sum(numbers []int) int {
 }
 
 func SumAll(slices ...[]int) []int {
-	return []int{5}
+	var sliceValues []int
+	for _, slice := range slices {
+		num := Sum(slice)
+		sliceValues = append(sliceValues, num)
+	}
+	return sliceValues
 }

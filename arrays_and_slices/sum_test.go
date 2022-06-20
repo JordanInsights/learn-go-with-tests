@@ -18,7 +18,7 @@ func TestSum(t *testing.T) {
 	})
 }
 
-func TestSumAl(t *testing.T) {
+func TestSumAll(t *testing.T) {
 	t.Run("2 slices", func(t *testing.T) {
 		got := arrays_and_slices.SumAll([]int{1, 2}, []int{3, 4})
 		want := []int{3, 7}
