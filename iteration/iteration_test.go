@@ -5,9 +5,9 @@ import (
 	"testing"
 )
 
-func TestIt(t *testing.T) {
+func TestRepeat(t *testing.T) {
 	repeated := iteration.Repeat("a")
-	expected := ""
+	expected := "aaaaa"
 
 	if repeated != expected {
 		t.Errorf("expected %q but got %q", expected, repeated)
