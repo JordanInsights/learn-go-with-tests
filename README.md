@@ -2,3 +2,4 @@
 - Chapter 1: Basics
 - Chapter 2: Integers
 - Chapter 3: Iteration
+- Chapter 4: Arrays & Slices
